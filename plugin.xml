@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordovaanalyticsplugin" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <name>Google Analytics by Nascorpent</name>    
+    
+<!--  O Construct 3 já cria o módulo ao instalar o plugin no projeto.
+       <js-module name="cordovaanalyticsplugin" src="www/cordovaanalyticsplugin.js">
+          <clobbers target="cordovaanalyticsplugin" />
+      </js-module> -->
+
+    <engines>
+        <engine name="cordova" version=">=9.0" />
+        <engine name="cordova-android" version=">=9.0.0" />
+    </engines>
+
+    <platform name="android">
+
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="cordovaanalyticsplugin">
+                <param name="android-package" value="com.nascorpent.cordovaanalyticsplugin" />
+            </feature>
+        </config-file>
+        
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+
+        <source-file src="src/android/cordovaanalyticsplugin.java" target-dir="src/com/nascorpent" />
+        
+        <resource-file src="src/android/res/values/games-ids.xml" target="res/values/games-ids.xml" />
+
+        <framework src="src/android/cordovaanalyticsplugin.gradle" custom="true" type="gradleReference" />
+        
+    </platform>
+</plugin>

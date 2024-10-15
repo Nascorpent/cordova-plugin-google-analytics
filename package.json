@@ -1,0 +1,24 @@
+{
+    "name": "cordovaanalyticsplugin",
+    "version": "1.0.0",
+    "description": "Plugin Cordova para Google Analytics and Construct 3.",
+    "main": "./www/cordovaanalyticsplugin.js",
+    "author": "NascorpEnt",
+    "license": "MIT",
+    "keywords": [
+        "cordova",
+        "plugin"
+      ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nascorpent/cordovaanalyticsplugin.git",
+        "directory": "google-play-games-v2"
+      },
+    "bugs": {
+        "url": "https://github.com/Nascorpent/cordovaanalyticsplugin/issues"
+      },
+    "homepage": "https://github.com/Nascorpent/cordovaanalyticsplugin/README.md",
+    "dependencies": {        
+        "xml2js": "^0.4.23"
+    }
+  }

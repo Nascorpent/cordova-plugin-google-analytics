@@ -1,21 +1,29 @@
 {
-    "name": "cordovaanalyticsplugin",
-    "version": "1.0.0",
-    "description": "Plugin Cordova para Google Analytics and Construct 3.",
-    "main": "./www/cordovaanalyticsplugin.js",
-    "author": "NascorpEnt",
-    "license": "MIT",
-    "keywords": [
-        "cordova",
-        "plugin"
-      ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Nascorpent/cordova-plugin-google-analytics.git",
-        "directory": "google-play-games-v2"
-      },
-    "bugs": {
-        "url": "https://github.com/Nascorpent/cordova-plugin-google-analytics/issues"
-      },
-    "homepage": "https://github.com/Nascorpent/cordova-plugin-google-analytics/blob/main/README.md"
+  "name": "cordova-plugin-google-analytics",
+  "version": "1.0.0",
+  "description": "Plugin Cordova para Google Analytics and Construct 3.",
+  "main": "./www/cordovaanalyticsplugin.js",
+  "author": "NascorpEnt",
+  "license": "MIT",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "google analytics",
+    "firebase",
+    "tracking"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nascorpent/cordova-plugin-google-analytics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nascorpent/cordova-plugin-google-analytics/issues"
+  },
+  "homepage": "https://github.com/Nascorpent/cordova-plugin-google-analytics/blob/main/README.md",
+  "cordova": {
+    "id": "cordova-plugin-google-analytics",
+    "platforms": [
+      "android"
+    ]
   }
+}

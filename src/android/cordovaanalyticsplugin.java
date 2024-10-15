@@ -1,5 +1,7 @@
 package com.nascorpent.cordovaanalyticsplugin;
 
+import android.os.Bundle;
+
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 

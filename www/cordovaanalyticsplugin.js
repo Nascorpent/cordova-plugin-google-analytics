@@ -2,6 +2,7 @@ function callPlugin(name, params, successCallback, errorCallback) {
   cordova.exec(
       successCallback, // Callback de sucesso
       errorCallback,    // Callback de erro'cordovaanalyticsplugin',
+      'cordova-plugin-google-analytics-nascorpent',
       name,
       params
   );

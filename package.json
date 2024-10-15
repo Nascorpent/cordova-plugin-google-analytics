@@ -11,14 +11,11 @@
       ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Nascorpent/cordovaanalyticsplugin.git",
+        "url": "git+https://github.com/Nascorpent/cordova-plugin-google-analytics.git",
         "directory": "google-play-games-v2"
       },
     "bugs": {
-        "url": "https://github.com/Nascorpent/cordovaanalyticsplugin/issues"
+        "url": "https://github.com/Nascorpent/cordova-plugin-google-analytics/issues"
       },
-    "homepage": "https://github.com/Nascorpent/cordovaanalyticsplugin/README.md",
-    "dependencies": {        
-        "xml2js": "^0.4.23"
-    }
+    "homepage": "https://github.com/Nascorpent/cordova-plugin-google-analytics/blob/main/README.md"
   }

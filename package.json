@@ -1,8 +1,8 @@
 {
-  "name": "cordova-plugin-google-analytics-nascorpent",
-  "version": "1.0.0",
+  "name": "cordovaanalyticspluginnascorpent",
+  "version": "1.0.9",
   "description": "Plugin Cordova para Google Analytics and Construct 3.",
-  "main": "./www/cordovaanalyticsplugin.js",
+  "main": "./www/cordovaanalyticspluginnascorpent.js",
   "author": "NascorpEnt",
   "license": "MIT",
   "keywords": [

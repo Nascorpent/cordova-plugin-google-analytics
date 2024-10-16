@@ -1,23 +1,37 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-google-analytics-nascorpent" version="1.0.0"
+<plugin id="cordovaanalyticspluginnascorpent" version="1.0.9"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
     <name>Google Analytics by Nascorpent</name>
+
+    <js-module name="cordovaanalyticspluginnascorpent" src="www/cordovaanalyticspluginnascorpent.js">
+          <clobbers target="cordovaanalyticspluginnascorpent" />
+    </js-module>
+
     <engines>
         <engine name="cordova" version=">=9.0" />
         <engine name="cordova-android" version=">=9.0.0" />
     </engines>
+
     <platform name="android">
+
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="cordova-plugin-google-analytics-nascorpent"> 
-                <param name="android-package" value="com.nascorpent.cordovaanalyticsplugin" />
+            <feature name="cordovaanalyticspluginnascorpent"> 
+                <param name="android-package" value="com.nascorpent.cordovaanalyticspluginnascorpent" />
             </feature>
         </config-file>
+
         <config-file parent="/manifest" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
         </config-file>
-        <source-file src="src/android/cordovaanalyticsplugin.java" target-dir="src/com/nascorpent/cordovaanalyticsplugin" />
-        <framework src="src/android/cordovaanalyticsplugin.gradle" custom="true" type="gradleReference" />
+
+        <source-file src="src/android/cordovaanalyticspluginnascorpent.java" target-dir="src/com/nascorpent" />
+
+        <framework src="src/android/cordovaanalyticspluginnascorpent.gradle" custom="true" type="gradleReference" />
+
     </platform>
 </plugin>
